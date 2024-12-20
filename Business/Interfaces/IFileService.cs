@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Business.Interfaces
+﻿namespace Business.Interfaces
 {
-    internal class IFileService
+    public interface IFileService
     {
+        bool SaveContentToFile(string content);
+        string GetContentFromFile();
     }
 }

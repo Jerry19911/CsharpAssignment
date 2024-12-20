@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Business.Models;
 
 namespace Business.Factories
 {
-    internal class ContactFactory
+    public static class UserFactory
     {
+        public static Contact Create() => new Contact();
     }
 }

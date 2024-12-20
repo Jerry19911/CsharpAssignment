@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Business.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Business.Interfaces
 {
-    internal class IContactService
+    public interface IContactService
     {
+        bool CreateContact(Contact contact);
+        IEnumerable<Contact> GetAllContacts();
+        bool SaveListToFile();
+        bool GetListFromFile();
     }
 }
